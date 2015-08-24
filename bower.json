@@ -1,0 +1,19 @@
+{
+  "name": "manayaApp",
+  "version": "0.0.0",
+  "authors": [
+    "ng-martin <martin.anaya@hotmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "react": "~0.13.3"
+  }
+}
