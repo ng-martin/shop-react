@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Angular index</title>   
+        <link rel="stylesheet" type="text/css" media="screen" href="lib/vendor/bootstrap/dist/css/bootstrap.min.css" />
+    </head>
+    <body ng-app="notesApp">
+    
+        <div ng-controller ="notesController as vm">
+            
+            <h2>Notes</h2>
+            
+            <div class="input-group">
+            
+            </div>
+            
+            <div class="notes-list">
+                <ul ng-repeat="note in vm.notes">
+                    <li>
+                        <span>{{ note.title }}</span>
+                        <button class="note-delete">X</button>
+                    </li>
+                </ul>            
+            </div>
+        
+        </div>
+        
+        <!-- Angular scripts -->
+        <script type="text/javascript" src="lib/vendor/angular/angular.min.js"></script>
+        <!-- general scripts -->
+        <script type="text/javascript" src="app.js"></script>
+        <!-- controller scripts -->
+        <script type="text/javascript" src="controllers/notesController.js"></script>
+        <!-- services scripts -->
+        
+        <!-- Third party -->
+        <script type="text/javascript" src="http://localhost:1337/vorlon.js"></script>
+    </body>
+
+</html>
